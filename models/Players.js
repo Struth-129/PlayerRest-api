@@ -13,7 +13,7 @@ const menSchema = new mongoose.Schema({
         trim:true
     },
     dob:{
-        type:Date,
+        type:String,
         required:true,
         trim:true
     },
@@ -33,5 +33,5 @@ const menSchema = new mongoose.Schema({
     }
 })
 
-const MensRanking = new mongoose.model("MenRanking",menSchema);
-module.export = MensRanking;
+const MensRanking = new mongoose.model("MensRanking",menSchema);
+module.exports = MensRanking;
